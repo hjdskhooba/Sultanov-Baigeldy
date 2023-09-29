@@ -21,7 +21,9 @@ const App = () => {
 
   return (
     <div className={"app " + (darkThemeEnabled ? "dark-theme" : "")}>
-      <CirclesContainer />
+      <div className="hidden sm:flex">
+        <CirclesContainer />
+      </div>
       <Header
         darkThemeEnabled={darkThemeEnabled}
         setDarkThemeEnabled={setDarkThemeEnabled}

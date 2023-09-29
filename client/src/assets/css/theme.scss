@@ -1,6 +1,7 @@
 .app {
-  @apply transition-all;
+  transition: all 0.5ms;
   &.dark-theme {
+    transition: all 0.5ms;
     @apply text-white bg-gray-900;
     color: white;
     a,

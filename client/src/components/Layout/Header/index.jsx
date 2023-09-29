@@ -54,7 +54,7 @@ const Header = (props) => {
         className={
           "header shadow-lg items-center max-h-full min-w-full flex justify-between sticky top-0 transition-all z-[100000000] " +
           (props.darkThemeEnabled ? "shadow-2xl" : "") +
-          (isScrolled ? " h-[62px] sm:h-[58px]" : " h-[82px]")
+          (isScrolled ? " h-[60px] sm:h-[58px]" : " h-[82px]")
         }
       >
         <div
