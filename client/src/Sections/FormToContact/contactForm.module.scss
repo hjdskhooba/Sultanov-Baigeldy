@@ -1,0 +1,67 @@
+@layer utilities {
+  .shadow-top-lg {
+    box-shadow: 0px -10px 20px rgba(122, 122, 122, 0.3);
+  }
+}
+@tailwind utilities;
+
+.tl {
+  @apply shadow-top-lg min-w-full mt-11;
+}
+.collaborating {
+  @apply justify-between gap-10 md:flex md:flex-row relative overflow-visible md:static;
+  &-left {
+    @apply md:max-w-[340px] lg:max-w-[420px] items-center md:relative;
+    .cldesc {
+      @apply text-gray-900 text-[20px] leading-[1.4em];
+    }
+    & b {
+      @apply text-xl flex py-2 sm:text-black;
+    }
+    .clbottom {
+      @apply text-gray-900 text-[20px] font-normal -bottom-16 md:bottom-10 max-w-[327px] md:absolute;
+    }
+
+    .clbottomKG {
+      @apply max-w-[300px] text-gray-900 text-[20px] font-normal -bottom-16 md:bottom-10 md:absolute;
+    }
+  }
+  &-form {
+    @apply w-full my-10 h-max bg-white rounded-lg pl-1 max-w-full md:max-w-[40rem];
+    .cflabel {
+      @apply block font-medium text-gray-700 w-full;
+    }
+    .cfinput {
+      @apply mt-1 p-2 border rounded-md w-full border-gray-400 opacity-50 placeholder:text-[0.8em] hover:opacity-70 focus:outline-gray-400;
+    }
+    .cfinput-mes {
+      @apply mt-1 p-2 border rounded-md border-gray-400 opacity-50  hover:opacity-70 placeholder:text-[0.5em] md:w-full md:placeholder:text-[0.9em] items-start md:h-[110px] hover:border-2 active:border-2;
+      textarea {
+        @apply break-words mt-4 block h-[90px] ;
+      }
+    }
+    .cflabel2 {
+      @apply inline-flex items-center;
+    }
+    .cfsendbtn {
+      @apply rounded-full  h-[49px] flex w-full justify-center items-center gap-10 text-white transition-colors  bg-[#BDBDBD] duration-1000;
+    }
+    .cfsendbtn2 {
+      @apply rounded-full  h-[49px] flex w-full justify-center items-center gap-10 text-white transition-colors  bg-[#88CB02] hover:bg-[#9ee119] duration-1000 active:bg-[#629300] disabled:bg-[#98be4b];
+    }
+    .ff {
+      @apply flex justify-between lg:gap-[30px] w-full mb-1 flex-col lg:flex-row;
+      div {
+        @apply h-fit md:w-full;
+      }
+    }
+    &.submitted {
+      .cfsendbtn {
+        @apply bg-[#78a029] text-white;
+      }
+    }
+  }
+  h2 {
+    @apply pt-[50px] pb-[8px] flex items-center h-max w-full max-w-full lg:w-max lg:max-w-max text-[30px] sm:text-[38px] xl:text-[40px];
+  }
+}

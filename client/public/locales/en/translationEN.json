@@ -1,0 +1,108 @@
+{
+  "welcome": "Welcome to Aronia Pharm",
+  "hm": "Menu",
+  "links": {
+    "o": "About us",
+    "s": "Products",
+    "p": "Principles",
+    "e": "Stages",
+    "t": "Address",
+    "f": "Contacts"
+  },
+  "sections": {
+    "podk": "See More...",
+    "notFP": "No matching product found",
+    "notSended": "Error",
+    "title": {
+      "title": "HI, I'm Baigeldy",
+      "desc": "Full-Stack Web Developer",
+      "text": "The best web developer you've ever seen mf, hire me or i will kick your ass !",
+      "btn": "Contact",
+      "descAronia": "Sultanov Baigeldy is a pharmaceutical products manufacturing company based in the Kyrgyz Republic. It was founded in 2013 by the General Director Babaev Azzam Zhorobaevich. There are more than thirty drugs, including dietary supplements.",
+      "secondDescAronia": "Development and production of medicines, dietary supplements and cosmetics mainly based on natural plant materials. Absolutely all products of Aronia Pharm are certified and rated for high quality. We provide efficiency, excellent quality and low prices, making our customers' choice wise.",
+      "workingSince": "We work with",
+      "madeIN": "MADE IN KYRGYZSTAN   MADE IN KYRGYZSTAN   MADE IN KYRGYZSTAN   MADE IN KYRGYZSTAN  MADE IN KYRGYZSTAN   MADE IN KYRGYZSTAN MADE IN KYRGYZSTAN  MADE IN KYRGYZSTAN  MADE IN  KYRGYZSTAN  MADE IN KYRGYZSTAN KYRGYZSTAN  MADE IN KYRGYZSTAN KYRGYZSTAN  MADE IN KYRGYZSTAN KYRGYZSTAN  MADE IN KYRGYZSTAN KYRGYZSTAN  MADE IN KYRGYZSTAN KYRGYZSTAN  MADE IN KYRGYZSTAN KYRGYZSTAN  MADE IN KYRGYZSTAN KYRGYZSTAN  MADE IN KYRGYZSTAN KYRGYZSTAN  MADE IN KYRGYZSTAN KYRGYZSTAN  MADE IN KYRGYZSTAN KYRGYZSTAN  MADE IN KYRGYZSTAN KYRGYZSTAN  MADE IN KYRGYZSTAN KYRGYZSTAN  MADE IN KYRGYZSTAN KYRGYZSTAN  MADE IN KYRGYZSTAN KYRGYZSTAN  MADE IN KYRGYZSTAN KYRGYZSTAN  MADE IN KYRGYZSTAN KYRGYZSTAN  MADE IN KYRGYZSTAN KYRGYZSTAN  MADE IN KYRGYZSTAN KYRGYZSTAN  MADE IN KYRGYZSTAN MADE IN KYRGYZSTAN KYRGYZSTAN  MADE IN KYRGYZSTAN MADE IN KYRGYZSTAN KYRGYZSTAN  MADE IN KYRGYZSTAN MADE IN KYRGYZSTAN KYRGYZSTAN  MADE IN KYRGYZSTAN MADE IN KYRGYZSTAN KYRGYZSTAN  MADE IN KYRGYZSTAN ",
+      "production": "PRODUCTION"
+    },
+    "title": {
+      "title": "OcOO Aronia pharm",
+      "otherProducts": "Other products",
+      "ourPrinciples": "Our principles",
+      "certificates": "Certificates",
+      "ourPartners": "Our partners",
+      "reviews": "Reviews",
+      "emailAddress": "Email address",
+      "schedule": "Schedule",
+      "workingday": "Mn-Fr — 8:00-17:00",
+      "saturday": "Sa — 8:00-15:00",
+      "condition": "Composition"
+    },
+    "product_page": {
+      "title": "Ascorbic acid",
+      "productStages": "Product stages",
+      "frequentlySellingProducts": "Frequently selling products"
+    },
+    "product_stages": {
+      "researchandDevelopment": "Research and development:",
+      "researchDesc": "The first step in pharmaceutical manufacturing is research and development. During this phase, scientists and researchers work to discover and develop new drugs or improve existing formulations. Extensive research, including laboratory testing and preclinical studies, is being conducted to identify potential combinations with therapeutic benefits",
+      "formulationandPreparationforProduction": "Formulation and preparation for production",
+      "formulaDesc": "Once drug formulations are determined, the development process begins. At this stage, the selected composition is carefully combined with other pharmaceutical ingredients to create the final drug product. Pre-production includes pilot testing and formulation optimization to ensure consistency and quality.",
+      "production": "Production",
+      "prodectionDesc": "The manufacturing phase includes the large-scale production of a medicinal product. Specialized pharmaceutical machines are used to produce medicines in batches under strict good manufacturing practices and quality control standards. This step includes precise measurements, controlled conditions, and thorough documentation to ensure product integrity.",
+      "qualityControlandaAssurance": "Quality control and assurance",
+      "qualityDesc": "Quality control is an important aspect of pharmaceutical manufacturing. At various stages of production, samples are taken and analyzed to check the identity, purity, strength and overall quality of the product. The quality control process ensures that medicines meet regulatory requirements and safety standards before they are released for distribution.",
+      "packagingandLabeling": "Packaging and labeling:",
+      "packagingDesc": "After medicines pass quality control, they are packaged and labelled. Medicines are neatly placed in appropriate packaging such as blisters, vials or jars and labeled with important information, including dosage instructions, expiration dates and lot numbers. Proper packaging protects the product during transport and storage and ensures that it reaches the end consumer in optimal condition.",
+      "distributionandMonitoring": "Distribution and monitoring",
+      "distributionDesc": "The final stage includes the distribution of pharmaceutical products to medical facilities, pharmacies and other distribution channels. In addition, post-manufacturing monitoring is essential to track the effectiveness of drugs on the market and collect feedback from healthcare professionals and patients. This information helps in continuous improvement and any necessary adjustments to the manufacturing process."
+    },
+    "catalog": {
+      "title": "Products",
+      "solidFdosageForms": "Solid fdosage forms",
+      "softFdosageForms": "Soft fdosage forms",
+      "liquidFdosageForms": "Liquid fdosage forms",
+      "therapeuticandPreventiveMeans": " Therapeutic and preventive means",
+      "downloadCatalog": "Download catalog"
+    },
+    "modalText": {
+      "cooperation": "Cooperation",
+      "cooperationDesc": "Collaboration and Integrity: We develop strong partnerships with healthcare professionals, organizations and stakeholders based on honesty and mutual respect. Working together, we strive to raise healthcare standards and contribute to a healthier and brighter future.",
+      "development": "Development",
+      "developmentDesc": "Sustainability: With a strong focus on sustainability, we prioritize environmentally friendly practices throughout our manufacturing process, reducing our environmental footprint and contributing to a healthier planet for future generations.\n,",
+      "quality": "Quality",
+      "qualityDesc": "Quality: Our unwavering commitment to quality ensures that every product that leaves our facility meets stringent regulatory standards, providing healthcare professionals and patients with reliable medicines they can trust.\n",
+      "patient": "Patient",
+      "patientDesc": "Patient-Centered Approach: We put patients at the center of everything we do. Our mission is to improve people's lives by providing affordable and affordable pharmaceutical solutions that make a difference.",
+      "innovation": "Innovation",
+      "innovationDesc": "Innovation: We are constantly innovating, using cutting-edge technology and research to develop safe and effective pharmaceutical products that meet diverse healthcare needs."
+    },
+    "contacts": {
+      "title": "Contacts",
+      "shallWeCooperate": "Shal we cooperate?",
+      "contactsDesc": "If you are interested in cooperation with our company, fill out the feedback form on the website or call phone:",
+      "weWillContactYouDuringtheDay": "We will contact you during the day!",
+      "message": "Message*",
+      "fullName": "Full Name*",
+      "pleaseEnterYourFullName": "Please enter your full name",
+      "iAgreeWiththeTermsofThePrivacyPolicy": "I agree with the terms of the privacy policy",
+      "emailIsRequired": "Email is required",
+      "enterYourFullName": "Enter your full name",
+      "invalideEmail": "Invalid email!",
+      "enterEmail": "Enter email",
+      "thisFieldIsRequired": "This field is required",
+      "youCanContactusWithaRequestOrAnOffer": "You can contact us with a request or an offer!",
+      "quantitySymbols": "Quantity symbols",
+      "from": " from",
+      "messagecharacterLimit": "You have reached the character limit!"
+    },
+    "video": {
+      "title": "\"Aronia Pharm\" Vitacalcium, Vitayod, Vitacinc.",
+      "text": "Chocolate with mummy \"Kyrgyzstan. Top of Kusa\""
+    },
+    "send": "Send",
+    "sended": "Sended"
+  },
+  "product_page": {
+    "title": "Ascorbic acid"
+  }
+}

@@ -1,0 +1,17 @@
+version: '3'
+services:
+  aronia_front:
+    container_name: aronia_front
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8084:80"
+    env_file:
+      - ./.env
+    networks:
+      - front-network
+
+networks:
+  front-network:
+    driver: bridge

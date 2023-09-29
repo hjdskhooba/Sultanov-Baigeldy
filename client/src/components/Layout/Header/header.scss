@@ -1,0 +1,38 @@
+.header {
+  &__link {
+    @apply hover:text-[#88CB02] cursor-pointer transition-colors duration-500 text-gray-700 whitespace-nowrap text-lg;
+  }
+}
+h3 {
+  color: #ec5c03;
+}
+.arrow_down_btn {
+  position: relative;
+  &::after {
+    content: "";
+    background-position: center;
+    width: 17px;
+    height: 16px;
+    background-repeat: no-repeat;
+    background-image: url("../../../assets/layout/menu/select.svg");
+    transition: 500ms;
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.transition-transform {
+  transition-property: transform;
+  transition-duration: 0.3s;
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+}
+.transform {
+  animation-name: slideInFromRight;
+}

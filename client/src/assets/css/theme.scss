@@ -1,0 +1,71 @@
+.app {
+  @apply transition-all;
+  &.dark-theme {
+    @apply text-white bg-gray-900;
+    color: white;
+    a,
+    p,
+    span,
+    b,
+    i,
+    strong,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      color: white;
+    }
+    div,
+    section {
+      @apply text-white bg-gray-900;
+    }
+    header {
+      @apply text-white bg-gray-900;
+      & div::after {
+        filter: brightness(20);
+      }
+      img[alt="burger menu"] {
+        filter: invert(0.85);
+        :active {
+          cursor: default;
+        }
+      }
+    }
+    #change-theme-btn::before {
+      content: "light";
+      width: 100%;
+      padding: 0 5px;
+    }
+    #change-theme-btn {
+      -webkit-text-fill-color: #000;
+    }
+  }
+  #change-theme-btn {
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    border-radius: 7px;
+    width: fit-content;
+    font-size: larger;
+    font-weight: 600;
+    transition: all 0.3s ease-out;
+    position: relative;
+    background-color: black;
+    margin: 3px 10px;
+    padding: 2px 5px;
+    z-index: 10;
+  }
+  #change-theme-btn::before {
+    content: "";
+    transition: all 0.3s ease-out;
+    position: absolute;
+    background: #fff;
+    border-radius: 7px;
+    height: 90%;
+    width: 0;
+    left: 0;
+  }
+}

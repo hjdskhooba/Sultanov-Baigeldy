@@ -1,0 +1,29 @@
+.swiperCertificates {
+  overflow: visible;
+  .swiper-wrapper {
+    @apply max-w-full w-full;
+  }
+  .swiper-slide,
+  .swiper-slide-active {
+    margin-right: 0;
+    width: fit-content;
+    overflow: hidden;
+    padding: 0.8rem;
+    @apply shadow-xl rounded-md h-auto;
+  }
+  button {
+    @apply w-[2.5rem] h-[2.5rem];
+  }
+  .forel {
+    @apply mt-2 flex gap-2;
+    & button {
+      @apply w-[50px] h-[50px] rounded-full bg-[#88CB02] duration-300;
+      .svgshka1 {
+        @apply w-[20px] h-[20px] mx-auto transition-all active:-translate-x-2 duration-300;
+      }
+      .svgshka2 {
+        @apply w-[20px] h-[20px] mx-auto transition-all active:translate-x-2 duration-300;
+      }
+    }
+  }
+}

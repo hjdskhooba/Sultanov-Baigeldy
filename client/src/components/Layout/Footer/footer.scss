@@ -1,0 +1,11 @@
+.footer{
+  @apply absolute w-full z-20;
+    .header__link {
+      @apply sm:hover:text-[#88CB02] text-[#88CB02] md:text-white transition-colors duration-500 mb-2 sm:mb-1 leading-7;
+    }
+    &_logo{
+      background-image: "../../../assets/images/Footer/instagramLogo_active.svg";
+      @apply md:-translate-x-1;
+    }
+  }
+  
