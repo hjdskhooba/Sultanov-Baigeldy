@@ -2,7 +2,7 @@ import { useForm, Controller } from "react-hook-form";
 import style from "./contactForm.module.scss";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
-import { $mainApi } from "../../common";
+import { $mainApi } from "../../api";
 
 const ContactForm = () => {
   const { t, i18n } = useTranslation();

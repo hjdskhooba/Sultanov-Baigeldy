@@ -1,4 +1,4 @@
-// import arrowDown from "../../../assets/layout/menu/select.svg";
+// import arrowDown from "../../../assets/images/layout/menu/select.svg";
 import { useTranslation } from "react-i18next";
 import React, { useState } from "react";
 

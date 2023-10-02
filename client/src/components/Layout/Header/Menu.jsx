@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import closeIcon from "../../../assets/layout/menu/x.svg";
+import closeIcon from "../../../assets/images/layout/menu/x.svg";
 import Links from "../Links";
 
 const Menu = ({ menuOpen, handleCloseMenu }) => {

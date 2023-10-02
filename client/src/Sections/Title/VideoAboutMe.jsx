@@ -1,4 +1,4 @@
-import playBtn from "../../assets/main/title/playbtn.svg";
+import playBtn from "../../assets/images/main/title/playbtn.svg";
 import { useEffect, useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
 import style from "./videoViewer.module.scss";

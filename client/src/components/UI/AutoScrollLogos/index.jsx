@@ -1,45 +1,64 @@
-import { getPhotosAPI } from "../../../redux/slices/swiper";
-import { useDispatch, useSelector } from "react-redux";
-import React, { useRef, useEffect } from "react";
-import styles from "./logos.module.scss";
-import Loader from "../Loader/Loader";
+import "./logos.scss";
+import { useRef } from "react";
+import {
+  motion,
+  useScroll,
+  useSpring,
+  useTransform,
+  useMotionValue,
+  useVelocity,
+  useAnimationFrame,
+} from "framer-motion";
+import { wrap } from "@motionone/utils";
 
-const AutoScrollingLogos = () => {
-  const marqueeRef = useRef(null);
-  const dispatch = useDispatch();
-  const { logos, isLoading } = useSelector((state) => state.swiper);
-  useEffect(() => {
-    const marqueeElement = marqueeRef?.current;
-    const marqueeGroupElement = marqueeElement?.querySelector(".marquee__group");
-    const marqueeContentWidth = marqueeGroupElement?.offsetWidth;
-    const marqueeContainerWidth = marqueeElement?.offsetWidth;
-    const scrollDistance = marqueeContentWidth - marqueeContainerWidth;
-    marqueeGroupElement?.style?.setProperty(
-      "--scroll-end",
-      `-${scrollDistance}px`
-    );
-  }, [logos]);
-  useEffect(() => {
-    dispatch(getPhotosAPI());
-  }, [dispatch]);
-  return isLoading ? <Loader/> : (
-    <div
-      className={`marquee ${styles.marquee}`}
-      ref={marqueeRef}
-      data-aos="fade-left"
-    >  
-      <div className={`marquee__group ${styles["marquee__group"]}`}>
-        {[...logos, ...logos, ...logos, ...logos, ...logos].map((logo, idx) => (
-          <img
-            key={idx}
-            src={logo.image}
-            alt="logo img"
-            className={`h-14 w-40 sm:h-max sm:w-max mx-10 object-contain ${styles.marquee__logo}`}
-          />
-        ))}
+function ParallaxText({ children, baseVelocity = 100 }) {
+  const baseX = useMotionValue(0);
+  const { scrollY } = useScroll();
+  const scrollVelocity = useVelocity(scrollY);
+  const smoothVelocity = useSpring(scrollVelocity, {
+    damping: 50,
+    stiffness: 400,
+  });
+  const velocityFactor = useTransform(smoothVelocity, [0, 1000], [0, 5], {
+    clamp: false,
+  });
+
+  const x = useTransform(baseX, (v) => `${wrap(-20, -45, v)}%`);
+
+  const directionFactor = useRef(1);
+  useAnimationFrame((t, delta) => {
+    let moveBy = directionFactor.current * baseVelocity * (delta / 1000);
+
+    if (velocityFactor.get() < 0) {
+      directionFactor.current = -1;
+    } else if (velocityFactor.get() > 0) {
+      directionFactor.current = 1;
+    }
+
+    moveBy += directionFactor.current * moveBy * velocityFactor.get();
+
+    baseX.set(baseX.get() + moveBy);
+  });
+
+  return (
+    <div className="logos">
+      <div className="parallax">
+        <motion.div className="scroller" style={{ x }}>
+          <span>{children} </span>
+          <span>{children} </span>
+          <span>{children} </span>
+          <span>{children} </span>
+        </motion.div>
       </div>
     </div>
   );
-};
+}
 
-export default AutoScrollingLogos;
+export default function App() {
+  return (
+    <section>
+      <ParallaxText baseVelocity={-5}>Framer Motion</ParallaxText>
+      <ParallaxText baseVelocity={5}>Scroll velocity</ParallaxText>
+    </section>
+  );
+}

@@ -1,6 +1,6 @@
 import { Link as ScrollLink } from "react-scroll";
 import { useTranslation } from "react-i18next";
-import baigeldy from "../../assets/main/title/abdyhashymov.jpg";
+import baigeldy from "../../assets/images/main/title/abdyhashymov.jpg";
 import "./SwiperAbout.scss";
 
 const Title = () => {

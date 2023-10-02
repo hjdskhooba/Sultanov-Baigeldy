@@ -3,11 +3,11 @@ import { useTranslation } from "react-i18next";
 import { Link as SLink } from "react-scroll";
 import Navbar from "./Navbar";
 import Menu from "./Menu";
-import burger from "../../../assets/layout/burger.svg";
-import baigeldy_logo from "../../../assets/main/title/png-transparent-colorful-letters-b-letter-colour-b-thumbnail-removebg-preview.png";
+import burger from "../../../assets/images/layout/burger.svg";
 import LanguageSelector from "./LanguageSelect";
 import "./header.scss";
 import ThemeChangeBtn from "./ChangeTheme";
+import BLetter from "../../UI/BLetter";
 
 const Header = (props) => {
   const { t } = useTranslation();
@@ -61,13 +61,7 @@ const Header = (props) => {
           className="flex items-center justify-between container bg-white h-full"
           style={{ overflow: "visible" }}
         >
-          <SLink to="aboutme" smooth className="h-full">
-            <img
-              src={baigeldy_logo}
-              alt="logo letter"
-              className="max-w-8 sm:max-w-12 -translate-x-3 h-[90%] sm:max-h-full object-contain"
-            />
-          </SLink>
+          <BLetter/>
           <div className="flex items-center lg:justify-between justify-end max-w-[837px] md:w-[837px] text-xl sm:text-lg h-full">
             <Navbar />
             <LanguageSelector />

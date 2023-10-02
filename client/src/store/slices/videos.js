@@ -1,6 +1,5 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
-import { $mainApi } from "../../common";
-import axios from "axios";
+import { $mainApi } from "../../api";
 
 export const getVideosAPI = createAsyncThunk(
   "videos/getVideosAPI",

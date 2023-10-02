@@ -1,7 +1,7 @@
 import Loader from "./components/UI/Loader/Loader";
 import ReactDOM from "react-dom/client";
 import { Provider } from "react-redux";
-import { store } from "./redux/store";
+import { store } from "./store";
 import "./assets/css/global.scss";
 import { Suspense } from "react";
 import "./assets/css/index.css";
